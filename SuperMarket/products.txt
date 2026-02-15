@@ -1,0 +1,6 @@
+Bread;3.5;230
+Coffee;10.7;300
+$1 Pizza;1.0;750
+Coca Cola;3.2;125
+Chicken samsa;4.5;8
+Nitro;6.66;2
