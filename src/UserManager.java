@@ -13,11 +13,15 @@ class UserManager {
 
     public void addUser(User user){
         User found = findUser(user.getUsername());
+        if (found == null){
+            users.add(user);
+            return;
+        }
         if(found.getUsername().equals(user.getUsername())){
             System.out.println("Error: User already exist");
             return;
         }
-        users.add(user);
+
     }
 
     public User findUser(String username){

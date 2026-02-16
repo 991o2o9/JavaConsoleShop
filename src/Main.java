@@ -76,6 +76,9 @@ public class Main {
         System.out.println("(2) - Add product");
         System.out.println("(3) - Get total price of all products");
         System.out.println("(4) - Get all purchase history");
+        System.out.println("(5) - Get total revenue");
+        System.out.println("(6) - Get average purchase value");
+        System.out.println("(7) - Get top customer");
         System.out.println("(0) - Logout");
       }
       else {
@@ -111,6 +114,9 @@ public class Main {
               System.out.println(purchase);
             }
           }
+          case "5" -> System.out.printf("Total revenue for all sales is: %.2f%n", historyService.getTotalRevenue());
+          case "6" -> System.out.printf("Average purchase value for all sales is: %.2f%n", historyService.getAveragePurchaseValue());
+          case "7" -> System.out.println("Top №1 customer is: " + historyService.getTopCustomer());
           case "0"->{
             System.out.println("Thank you!");
             LoggedIn = false;
